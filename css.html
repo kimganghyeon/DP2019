@@ -55,5 +55,147 @@
      
  </style>
  <a href="#">링크 버튼</a>
+ <style>
+#boxmodel1{
+    background-color: #dddddd;
+    width: 100px;
+    height: 200px; /* 바깥 여백 */
+    padding: 100px; /* 안쪽 여백 */
+    border: solid 1px black; /* 경계 */
+    /* 경계: 선종류 선두께 선색깔 */
+}
+</style>
+ <div id="boxmodel1">박스모델1</div>
+ 인라인 태그
+
+ <style>
+    /* 하위 요소 선택자, 띄어쓰기 */
+div li{
+color: coral;
+}
+/* 자식 요소 선택자, >부등호 기호 */
+div>ul>li{
+    text-decoration: underline;
+}
+/* 선택자 그룹화, 쉼표(,) */
+div,ul,li{
+    color: blueviolet;
+    /* 16진수, 0~9-A~F */
+    color: #000; /* 3자리 컬러코드 #rgb */
+    color: #000000; /* 6자리 컬러코드 #rrggbb */
+    color: rgb(0,0,255); /* 0~255 */
+    color: rgb 0%,0%,100%); /* */
+} 
+ </style>
+ <div style="color: blue;">
+     container
+ <ul>
+     <li>리스트1</li>
+     <li>리스트2</li>
+     <li>리스트3</li>
+     <li>리스트4</li>
+ </ul>
+</div>
+
+<style>
+    .position_test{background-color: #ddd;
+        /* static 정적인(기본) */
+        position: static;
+        /* absolute 절대적인 */
+        /* top, left, right, bottom 위치 조종 가능 */
+        position: absolute;
+        top: 110px;
+        left: 100px;
+        /* fixed 고정된 */
+        position: fixed;
+     }
+    </style>
+<div class="position_test">
+    position_test
+    <style>
+        .font_test{
+            font-family: "배달의민족 도현", "Jonah", "sans-serif";
+            /* small, large, medium */
+            font-size: 10px;
+            /* normal, bold, bolder */
+            font-weight: bolder;
+            /* nomal, italic, oblique */
+            font-style: italic;
+            /* normal, small-caps, */
+            font-variant: small-caps;
+            /* left, center, right */
+            /* inline 요소에만 적용됨 */
+            text-align: center;
+
+            height: 150px;
+            background-color: #ddd;
+            
+            /* none, underline, overline, line-through*/
+            text-decoration: underline;
+        }
+    </style>
+    <div class="font_test">
+    <span>ABCdefghigKlmn</span>
+    container
+    font_test
+<img width="50px" src="images/car.jpg" />
+</div>
+
+<style>
+    .letter_line{
+        /* 글자 사이의 간격 */
+        letter-spacing: 10px;
+        /* 줄 간격 */
+        line-height: 30px;
+        /* 들여쓰기 */
+        text-indent: 50px;
+
+    }
+</style>
+<div class="letter_line">
+        국악인 신영태. 그는 2001년 북경 유니버시아드 폐막 공연, 2002년 월드컵 개막 공연, 2012년 MBC드라마 <마의> 등에 출연한 대북연주가이다. 굵직굵직한 공연을 도맡으며 승승장구했지만 언젠가부터 국악인으로서의 그 어떠한 재미와 보람을 찾을 수 없었다던 그. 왜 이러는 걸까? 스스로 괴로워하던 중 마음수련을 만난 그는 이제 국악이 갖는 본래의 이치를 깨닫고 무대 위에서의 신명도 되찾았다 한다. 신영태씨가 전하는 마음 빼기 이야기.
+        ‘둥둥~ 둥둥~ 둥둥~’ 
+        “그 옛날 사람들이 짐승을 잡아먹고 불쌍해서 그 마음을 달래기 위해 가죽으로 만들어 친 것이 북의 시초입니다. 북소리는 사람의 심장소리와 비슷합니다. 심장은 평소엔 둥~ 둥~ 뛰다가 좀 힘들면 둥둥둥둥~ 난리가 납니다. 어떻게 보면 태어나서 죽는 순간까지 자기도 모르게 평생 연주를 하고 있는 것이죠. 어떤 때는 잔잔하게 뛰고 어떤 때는 격하게 뛰고 있나 한번 확인해보면서 오늘의 공연을 봐주시면 좋겠습니다.”
+        요즘 제가 한창 전국을 순회하면서 마음 토크 콘서트 공연을 하고 있는데, 이런 말로 오프닝을 시작합니다. 불안과 스트레스에 시달리는 현대인들에게 위안을 주고 성찰, 치유의 길을 알려주자는 취지로 기획한 공연이다 보니, 아무래도 자신의 마음도 돌아보며 자신의 심장 소리에 귀 기울이며 공연을 즐기시면 좋으니까요. 다행히 관객 분들이 ‘오기 전엔 답답했는데 가슴이 탁 트였다’란 말씀을 해주실 때면 가장 보람이 있어요.
+        사실 저는 원래 가수가 꿈이었어요. 노래할 때 내 속에 있는 무언가를 끄집어내는 느낌이 참 좋았거든요. 하지만 집안 형편이 어려워 음악 레슨은 꿈도 못 꾸고, 학비 지원을 받을 수 있는 해양대학교에 진학하게 되었죠. 아침에 일어나서 점호하고 구보하고, 제복입고 학교를 다니니까 마치 군 생활하는 거 같았어요. 그러다 우연히 친구 따라 서울 동아리 모임에 참석하면서 우리 전통 가락을 처음 접하게 되었어요. 내 대학 생활과는 달리 또래 친구들이 판소리, 민요를 하면서 거방지게 노는데 제겐 문화적 충격으로 다가오더라고요. 희로애락이 물씬 담긴 노래를 듣는데 순간 기운도 나고…. 그때부터 판소리와 민요, 풍물을 배우기 시작했어요. 연주하면서 몰입되는 순간을 경험하면서 국악에 점차 매료됐죠. 
+</div>
+<style>
+.text-transform{
+    /* none : 일반
+    uppercase : 대문자로
+    iawercase : 소문자로
+    Capitalize : 첫글자 대문자 */
+}
+</style>
+<div class="text-transform">
+    ABCdefghigKlmn
+</div>
+
+<style>
+.pre{\{
+white-space: pre;
+}
+ </style>
+ <!-- &nbsp;띄어쓰기, <br/>줄내림 -->
+<div class="pre">
+    1 2 3          4 5
+    7 8 9 0
+</div>
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Mansalva&display=swap);
+    @import url(https://fonts.googleapis.com/css?family= Open + Sans & display = swap);
+    /* import */
+    .google_font{
+        font-family: 'Nanum Pen Script' cursive;
+        /* import후 들여오기 된 폰트의 이름을 명시하여 사용함 */
+        font-family: 'Mansalva', cursive;
+    }
+
+</style>
+<div class="google_font">
+google_font
+</div>
+
     </body>
 </html>
