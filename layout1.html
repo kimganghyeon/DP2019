@@ -5,6 +5,10 @@
         <title>layout1</title>
         <meta charset="urf-8" />
         <style>
+            #wrap{
+                min-width: 1100px; /* 최소 넓이 */
+                max-width: 1920px; /* 최대 넓이 */
+            }
         header,nav,div,footer,h1,ul,li,h2,section {
            /* border: solid 1px black; */
        /* 경계: 실선 1픽셀두께 검은색; */
@@ -47,6 +51,76 @@
         #navigation{
             background-color: #eee; /* 컬러코드 #rgb */
         }
+        dd{
+            margin: 0px;
+        }
+        dt{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        div>section{
+
+        }
+        div>section:nth-child(1){
+            background-color: #98f;
+        }
+        div>section:nth-child(2){
+            background-color: #5d9;
+        }
+        div>section:nth-child(3){
+            background-color: #f76;
+        }
+        div>section:nth-child(4){
+            background-color: #ec5;
+        }
+        div>section h3{
+            color: white;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+        .content_part{
+            width: 480px;
+            float: left; /* 왼쪽 기준으로 둥둥 떠있게 */
+            margin: 10px;
+            /* margin-border-padding-content-padding-border-margin*/
+        }
+        div>section>div{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            /* 블록형 태그의 가운데 정렬법 */
+        }
+        footer>ul{
+            padding: 0px;
+        }
+        footer ul>li{
+            list-style: none; /* 리스트-형태:없음 */
+            float: left;
+        }
+        /* footer>ul:nth-child(1)>li{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        */
+        #footer_div{ float: left; }
+        #footer2{ float: right; }
+        #footer1>li{
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: solid 1px #aaa;
+        }
+        #footer1>li:nth-child(6){
+            border: none;
+        }
+        #footer2>li{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        footer{
+            background-color: #333;
+            color: #ddd;
+        }
    </style>
     </head>
     <body>
@@ -85,7 +159,7 @@
                 <section>
                         <div>
                                 <h3>Wep design</h3>
-                                <div>
+                                <div class="content_part">
                                     <img src="images/layout1_img1.jpg"/>
                                 <dl>
                                     <dt>
@@ -98,7 +172,7 @@
                                 </dd>
                             </dl>
                             </div>
-                                <div>
+                                <div class="content_part">
                                        <img src="images/layout1_img2.jpg"/>
                                     <dl>
                                         <dt>
@@ -109,9 +183,15 @@
                                         comsmdmsfm fsmfmsf msf smfs 
                                         내용내용내용내용내용내용내용내용내용
                                     </dd>
-                                </dl></div><div>
+                                </dl>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </section>
+                        <section>
+                                    <div>
                                         <h3>Wep design</h3>
-                                        <div>
+                                        <div class="content_part">
                                             <img src="images/layout1_img3.jpg"/>
                                         <dl>
                                             <dt>
@@ -124,7 +204,7 @@
                                         </dd>
                                     </dl>
                                     </div>
-                                        <div>
+                                        <div class="content_part">
                                                <img src="images/layout1_img4.jpg"/>
                                             <dl>
                                                 <dt>
@@ -135,9 +215,15 @@
                                                 comsmdmsfm fsmfmsf msf smfs 
                                                 내용내용내용내용내용내용내용내용내용
                                             </dd>
-                                        </dl></div><div>
+                                        </dl>
+                                    </div>
+                                    <div class="clear"></div>
+                                    </div>
+                                </section>
+                                 <section>
+                                    <div>
                                                 <h3>Wep design</h3>
-                                                <div>
+                                                <div class="content_part">
                                                     <img src="images/layout1_img5.jpg"/>
                                                 <dl>
                                                     <dt>
@@ -150,7 +236,7 @@
                                                 </dd>
                                             </dl>
                                             </div>
-                                                <div>
+                                                <div class="content_part">
                                                        <img src="images/layout1_img6.jpg"/>
                                                     <dl>
                                                         <dt>
@@ -161,9 +247,15 @@
                                                         comsmdmsfm fsmfmsf msf smfs 
                                                         내용내용내용내용내용내용내용내용내용
                                                     </dd>
-                                                </dl></div><div>
+                                                </dl>
+                                            </div>
+                                            <div class="clear"></div>
+                                    </div>
+                                        </section>
+                                    <section>
+                                            <div>
                                                         <h3>Wep design</h3>
-                                                        <div>
+                                                        <div class="content_part">
                                                             <img src="images/layout1_img7.jpg"/>
                                                         <dl>
                                                             <dt>
@@ -176,7 +268,7 @@
                                                         </dd>
                                                     </dl>
                                                     </div>
-                                                        <div>
+                                                        <div class="content_part">
                                                                <img src="images/layout1_img8.jpg"/>
                                                             <dl>
                                                                 <dt>
@@ -187,15 +279,37 @@
                                                                 comsmdmsfm fsmfmsf msf smfs 
                                                                 내용내용내용내용내용내용내용내용내용
                                                             </dd>
-                                                        </dl></div>
-                </div>
-                </section>
-                <section>content1</section>
-                <section>content2</section>
-                <section>content3</section>
-                <section>content4</section>
+                                                        </dl>
+                                                     </div>
+                                                     <div class="clear"></div>
+                                            </div>
+                                              </section>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div id="footer_div">
+                <ul id="footer1">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Work</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                    <div class="clear"></div>
+                </ul>
+               <P>@ 2013 Bluebox. All Right Reserved.</P>
+               <p>the loges in the design are the property of their respective owners/copyright holders.</p>
+            </div>
+                <ul id="footer2">
+                    <li><img src="images/layout1_footer_icon1.png" alt=""></li>
+                    <li><img src="images/layout1_footer_icon2.png" alt=""></li>
+                    <li><img src="images/layout1_footer_icon3.png" alt=""></li>
+                    <li><img src="images/layout1_footer_icon4.png" alt=""></li>
+                    <li><img src="images/layout1_footer_icon5.png" alt=""></li>
+                    <li><img src="images/layout1_footer_icon6.png" alt=""></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
         </div>
     </body>
 </html>
